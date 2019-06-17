@@ -135,13 +135,12 @@ describe('Zoa User', () => {
             })
             zoa.save((err, zoa) => {
                 chai.request(index)
-                .delete('/zoas/', zoa.id)
+                .delete('/zoas/' + zoa.id)
                 .end((err, res) => {
-                    res.should.have.status(201); 
+                    res.should.have.status(200); 
                     res.body.should.be.a('object'); 
                     res.body.should.have.property('name').eql('Ken'); 
-                    res.body.results.should.have.property('ok').eql(1);
-                    res.body.results.should.have.property('n').eql(1);
+                    
                 done(); 
                 });
             });
