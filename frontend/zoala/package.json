@@ -1,0 +1,38 @@
+{
+  "name": "zoala",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.1",
+    "@unimodules/core": "^1.0.0",
+    "@unimodules/react-native-adapter": "^2.0.0",
+    "babel-preset-expo": "^5.1.1",
+    "expo": "^32.0.6",
+    "expo-asset": "^4.0.0",
+    "expo-constants": "^4.0.0",
+    "expo-file-system": "^5.0.0",
+    "expo-font": "^1.1.0",
+    "expo-react-native-adapter": "^3.0.1",
+    "ionicons": "^4.5.8",
+    "react": "16.8.3",
+    "react-native": "0.59.8",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
